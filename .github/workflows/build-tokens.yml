@@ -1,0 +1,38 @@
+name: Build Design Tokens
+
+on:
+  push:
+    branches: [ main ]
+    paths: 
+      - 'design-tokens/**/*.json'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Build tokens
+      run: npm run build
+    
+    - name: Commit generated CSS
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add build/
+        git diff --staged --quiet || git commit -m "Auto-generate CSS from tokens"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
