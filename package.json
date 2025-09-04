@@ -1,0 +1,14 @@
+{
+  "name": "design-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for WordPress theme",
+  "scripts": {
+    "build": "style-dictionary build",
+    "clean": "style-dictionary clean",
+    "watch": "nodemon --exec npm run build --watch design-tokens/**/*.json"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.8.0",
+    "nodemon": "^3.0.0"
+  }
+}
