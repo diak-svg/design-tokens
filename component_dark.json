@@ -1,0 +1,36 @@
+{
+  "color-button": {
+    "background-primary": {
+      "initial": {
+        "value": "{color.accent02.100}",
+        "type": "color"
+      },
+      "hover": {
+        "value": "{color.accent02.400}",
+        "type": "color"
+      },
+      "press": {
+        "value": "{color.accent02.200}",
+        "type": "color"
+      }
+    },
+    "border-secondary": {
+      "default": {
+        "value": "{color.accent02.100}",
+        "type": "color"
+      },
+      "hover": {
+        "value": "{color.accent02.400}",
+        "type": "color"
+      },
+      "press": {
+        "value": "{color.accent02.500}",
+        "type": "color"
+      }
+    }
+  },
+  "yellow": {
+    "value": "#fff1c5",
+    "type": "color"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "tokenSetOrder": [
+    "primitives_color",
+    "contextual_color_light",
+    "contextual_color_dark",
+    "component_dark",
+    "component_light",
+    "contextual_number_desktop",
+    "contextual_number_tablet",
+    "contextual_number_mobile"
+  ]
+}

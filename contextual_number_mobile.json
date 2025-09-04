@@ -1,0 +1,62 @@
+{
+  "corner": {
+    "radius": {
+      "sm": {
+        "value": "{radius.0}",
+        "type": "number"
+      },
+      "md": {
+        "value": "{radius.2}",
+        "type": "number"
+      },
+      "lg": {
+        "value": "{radius.4}",
+        "type": "number"
+      },
+      "xl": {
+        "value": "{radius.6}",
+        "type": "number"
+      }
+    }
+  },
+  "typography": {
+    "heading": {
+      "h1": {
+        "value": "{font.size.lg}",
+        "type": "number"
+      },
+      "h2": {
+        "value": "{font.size.md}",
+        "type": "number"
+      },
+      "h3": {
+        "value": "{font.size.sm}",
+        "type": "number"
+      },
+      "h4": {
+        "value": "{font.size.sm}",
+        "type": "number"
+      }
+    },
+    "body": {
+      "md": {
+        "value": "{font.size.xs}",
+        "type": "number"
+      },
+      "xs": {
+        "value": "{font.size.xxs}",
+        "type": "number"
+      },
+      "xxs": {
+        "value": "{font.size.xxxs}",
+        "type": "number"
+      }
+    },
+    "label": {
+      "xxxs": {
+        "value": "{font.size.xxxs}",
+        "type": "number"
+      }
+    }
+  }
+}
